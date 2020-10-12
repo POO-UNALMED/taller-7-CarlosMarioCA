@@ -20,5 +20,9 @@ public abstract class Pictograma {
 	abstract String interpretacion ();
 	
 	public abstract String toString();
+        
+        
+                
+                
 	
 }
