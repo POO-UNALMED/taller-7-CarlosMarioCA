@@ -28,7 +28,16 @@ public class Alfabeto extends Pictograma {
     
     @Override
     public String toString(){
-        return "Falta definir que hace";
+        String impresion = "";
+        for (int i = 0; i<letras.length ;i++){
+            if(i<letras.length-1){
+                impresion = impresion + letras[i]+", ";
+            }
+            else{
+                impresion = impresion + letras[i];
+            }
+        }
+        return impresion;
     }
     
     public int cantidadLetras(){

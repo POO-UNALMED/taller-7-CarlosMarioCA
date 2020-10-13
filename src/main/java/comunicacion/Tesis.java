@@ -27,15 +27,25 @@ public class Tesis extends Escrito{
     }
     
     public int palabrasTotales(int entero) {
-        return 4;
+        return entero*5;
     }
 
     public String interpretacion() {
         return interpretacion;
     }
 
+    @Override
     public String toString() {
-        return "Método por definir";
+        String impresion;
+        impresion = origen+"\n"+
+                    titulo+"\n"+
+                    autor+"\n"+
+                    paginas+"\n"+
+                    idea+"\n"+
+                    argumentos.length+"\n"+
+                    conclusion+"\n"+
+                    referencias+"\n";
+        return impresion;
     }
 
     public String getIdea() {

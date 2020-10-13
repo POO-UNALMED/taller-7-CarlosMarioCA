@@ -19,15 +19,24 @@ public class Libro extends Escrito {
     }    
     
     public int palabrasTotales(int entero){
-        return 4;
+        return entero*2;
     }
     
     public String interpretacion(){
         return interpretacion;
     }
     
-    public String toString(){
-        return "Método por definir";
+    @Override
+    public String toString() {
+        String impresion;
+        impresion = origen+"\n"+
+                    titulo+"\n"+
+                    autor+"\n"+
+                    paginas+"\n"+
+                    co_autor+"\n"+
+                    editorial+"\n"+
+                    edicion+"\n";
+        return impresion;
     }
 
     public String getCo_autor() {

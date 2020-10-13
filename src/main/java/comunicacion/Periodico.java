@@ -25,15 +25,23 @@ public class Periodico extends Escrito{
     
 
     public int palabrasTotales(int entero) {
-        return 4;
+        return entero*10;
     }
 
     public String interpretacion() {
         return interpretacion;
     }
 
+    @Override
     public String toString() {
-        return "Método por definir";
+        String impresion;
+        impresion = origen+"\n"+
+                    titulo+"\n"+
+                    autor+"\n"+
+                    paginas+"\n"+
+                    fecha+"\n"+
+                    primicia+"\n";
+        return impresion;
     }
 
     public String getFecha() {
