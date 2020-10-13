@@ -27,7 +27,7 @@ public class Tesis extends Escrito{
     }
     
     public int palabrasTotales(int entero) {
-        return entero*5;
+        return entero*5*paginas;
     }
 
     public String interpretacion() {

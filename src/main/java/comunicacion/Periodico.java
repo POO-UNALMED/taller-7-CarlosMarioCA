@@ -25,7 +25,7 @@ public class Periodico extends Escrito{
     
 
     public int palabrasTotales(int entero) {
-        return entero*10;
+        return entero*10*paginas;
     }
 
     public String interpretacion() {
