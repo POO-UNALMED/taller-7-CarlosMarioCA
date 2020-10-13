@@ -19,7 +19,7 @@ public class Libro extends Escrito {
     }    
     
     public int palabrasTotales(int entero){
-        return entero*2;
+        return entero*2*paginas;
     }
     
     public String interpretacion(){
@@ -29,13 +29,13 @@ public class Libro extends Escrito {
     @Override
     public String toString() {
         String impresion;
-        impresion = origen+"\n"+
-                    titulo+"\n"+
-                    autor+"\n"+
-                    paginas+"\n"+
-                    co_autor+"\n"+
-                    editorial+"\n"+
-                    edicion+"\n";
+        impresion = this.getOrigen()+"\n"+
+                    this.getTitulo()+"\n"+
+                    this.getAutor()+"\n"+
+                    this.getPaginas()+"\n"+
+                    this.getCo_autor()+"\n"+
+                    this.getEditorial()+"\n"+
+                    this.getEdicion();
         return impresion;
     }
 

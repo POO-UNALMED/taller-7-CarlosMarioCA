@@ -32,11 +32,11 @@ public class Fabula extends Escrito {
     @Override
     public String toString() {
         String impresion;
-        impresion = origen+"\n"+
-                    titulo+"\n"+
-                    autor+"\n"+
-                    paginas+"\n"+
-                    ensenanza+"\n";
+        impresion = this.getOrigen()+"\n"+
+                    this.getTitulo()+"\n"+
+                    this.getAutor()+"\n"+
+                    this.getPaginas()+"\n"+
+                    this.getEnsenanza();
         return impresion;
     }
 

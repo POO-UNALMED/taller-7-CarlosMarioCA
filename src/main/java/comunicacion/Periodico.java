@@ -35,12 +35,12 @@ public class Periodico extends Escrito{
     @Override
     public String toString() {
         String impresion;
-        impresion = origen+"\n"+
-                    titulo+"\n"+
-                    autor+"\n"+
-                    paginas+"\n"+
-                    fecha+"\n"+
-                    primicia+"\n";
+        impresion = this.getOrigen()+"\n"+
+                    this.getTitulo()+"\n"+
+                    this.getAutor()+"\n"+
+                    this.getPaginas()+"\n"+
+                    this.getFecha()+"\n"+
+                    this.getPrimicia();
         return impresion;
     }
 

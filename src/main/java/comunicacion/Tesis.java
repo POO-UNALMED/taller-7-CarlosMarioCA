@@ -37,14 +37,14 @@ public class Tesis extends Escrito{
     @Override
     public String toString() {
         String impresion;
-        impresion = origen+"\n"+
-                    titulo+"\n"+
-                    autor+"\n"+
-                    paginas+"\n"+
-                    idea+"\n"+
-                    argumentos.length+"\n"+
-                    conclusion+"\n"+
-                    referencias+"\n";
+        impresion = this.getOrigen()+"\n"+
+                    this.getTitulo()+"\n"+
+                    this.getAutor()+"\n"+
+                    this.getPaginas()+"\n"+
+                    this.getIdea()+"\n"+
+                    this.getArgumentos().length+"\n"+
+                    this.getConclusion()+"\n"+
+                    this.getReferencias();
         return impresion;
     }
 
